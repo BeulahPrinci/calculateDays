@@ -5,10 +5,13 @@
   }
 body{
     background-position: fixed;
-    background: linear-gradient(to left bottom, #79e7e2,#a7e7dc);
+    background: linear-gradient(to left bottom, #79e7e2,#a7e7dc); 
+    background-image: url("rosebg.jpg");
+
 }
 .container-1 {
-    background: linear-gradient(to right top, #a7e7dc, #f0f4f5);
+    background: linear-gradient(to right top, #fab1a0, #f0f4f5);
+    opacity: 0.9;
      border-radius: 10px;
     margin:10rem auto;
     border: 1px solid #ccc;
@@ -34,7 +37,8 @@ body{
 }
 h1{
     text-transform: capitalize;
-    padding-top: 2%;
+    padding-top: 3%;
+    color: #9e2d2d;
 }
 input[type=date] {
     width: 50%;
@@ -59,7 +63,7 @@ input[type=date] {
     display: flex;
    box-sizing: border-box;
     text-align: left;
-    background-color: #28d7d2;
+    background-color: #ff7675;
   border: 1px solid #ccc;
 }
 .btn{
@@ -67,10 +71,10 @@ input[type=date] {
     border: 2px solid #ccc;
     height: 3em;
     width: 9em;
-    background-color: #28d7d2;
+    background-color: #ff7675;
     border-radius: 4px;;
 }
 .btn:hover{
-    background-color: #2ef8f1;
-    border:3px solid #62e3e7;
+    background-color: #ff5050;
+    border:3px solid #fab1a0;
 }

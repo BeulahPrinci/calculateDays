@@ -1,17 +1,16 @@
 //challenge 1 birth days calculator
 function aDays(){
-    var year = document.getElementById('myDate').Date;
-    var x = document.getElementById("myDate").value;
-  document.getElementById("demo").innerHTML = x;
-    console.log(year)
-    var d = new Date();
-    var n = d.getFullYear();
-    var result = (d.getFullYear() - year)*365;
+    var inp = new Date(document.getElementById("myDate").value);
+    var today = new Date();
+    var diff = Math.floor((today.getTime() - inp.getTime())/(1000*60*60*24));
+    console.log(today, inp, today.getTime(), inp.getTime() , diff)
+   //document.getElementById("age").innerHTML = 'you are '+diff+' days old';
+
     var h1 = document.createElement('h1')
-    var ans = document.createTextNode('you are '+result+' days old');
+    var ans = document.createTextNode(diff+' days old');
     h1.setAttribute('id','age');
     h1.appendChild(ans);
-    document.getElementById('flex-board-result').appendChild(h1);
+    document.getElementById('demo').appendChild(h1);
 }
 
 function reset(){
